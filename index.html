@@ -2,9 +2,9 @@
 <html lang="en"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.jsdelivr.net/npm/p5@2.3.2/lib/p5.js"></script><script src="https://cdn.jsdelivr.net/npm/p5.js-compatibility@0.2.0/src/preload.js"></script>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
 
@@ -13,11 +13,12 @@
     <main id="m">
       <game id="g" class="space-r unselect"></game>
       <div id="b" class="unselect">
+        <button id="next">proceed</button>
         <button id="p" onclick="kioskOrBrowserPrint();">print</button>
       </div>
     </main>
     <div id="footer" class="space-r">
-      by shriya
+      by lockbearer
     </div>
     <script src="sketch.js"></script>
     <script>
