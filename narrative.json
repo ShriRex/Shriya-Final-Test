@@ -27,7 +27,8 @@
 
 
   "stages": [
-    "lush green, {deity} shines through<br />{groups2} arms clatter<br /> u draw ur {adjective} {weapon} <br> Hestia's {good} felt<br />{things} only in name<br /> who/what are u?",
+    "lush green, {deity} shines through<br />{groups2} arms clatter<br /> u draw ur {adjective} {weapon}",
+    "Hestia's {good} felt<br />{things} only in name<br /> who/what are u?",
     "from the {place}, they emerge <br />{groups} we had left behind<br />{verbed}, as u {action1}",
     "easy, u mend<br />{things} approaching, calm<br />new {groups2} bear gifts",
     "{weapon}s {verbing}<br />a {jewel} falls<br />b4 thought, u {action2}",
