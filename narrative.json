@@ -7,7 +7,7 @@
     "verbing": ["fading", "mourning", "aching", "chilling", "cooling", "decaying", "dissolving", "echoing", "forsaking", "searching", "longing", "haunting", "lingering", "rotting", "wailing"],
     "good": ["comfort", "aid", "kiss", "love", "charm", "joy", "peace", "care", "glow", "tender", "kindness", "solace", "warmth"],
     "verbed": ["chilled", "bled", "frayed", "haunted", "lamented", "orphaned", "scarred", "splintered", "veiled", "withered", "wasted", "eroded"],
-    "deity": ["Helios", "Selene", "Nika", "Chang'e", "Amaterasu"],
+    "deity": ["Helios", "Selene"],
     "weapon": ["sword", "bow & arrow", "flail", "shield", "scrying orb", "ancient tome", "staff", "glock", "wand", "chakram"],
     "place": [ "clouds", "gardens", "ether", "ruins", "memories", "asylums", "bastions", "castles", "catacombs", "chateaux", "citadels", "cosmos", "dimensions", "estates", "fortresses", "galaxies", "halls", "havens", "hearths", "hideaways", "homes", "keeps", "kingdoms", "labyrinths", "manors", "oases", "palaces", "planes", "planets", "realms", "refuges", "remnants", "sanctuaries", "shelters", "shrines", "spheres", "spires", "temples", "tombs", "universes", "wastelands", "worlds"],
   "groups": ["choirs", "flights", "covens", "collectives", "factions", "cabals", "packs", "houses", "mortals", "mans"],

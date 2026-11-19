@@ -258,7 +258,7 @@ document.getElementById("next").addEventListener("click", () => {
 //////////// SUPER IMPORTANT
 ///// THIS IS WHAT UR LOOKING FOR IDIOT 
 
-const STAGE_TRANSITIONS = {
+//const STAGE_TRANSITIONS = {
   // 2: (blanks, locked) => {
   //   if (locked.weapon === 'sword') return 5;
   //   if (locked.weapon === 'bow & arrow') return 7;
@@ -272,248 +272,248 @@ const STAGE_TRANSITIONS = {
 
   // START TO 2 IS STATIC
   
-  2: (blanks, locked) => {
-    let t = blanks[3].word;
-    //console.log(t);
-    if (t == "attack") {
-      return 4;
-    } else if (t == "flea") {
-      return 5;
-    } else {
-      return 16;
-    }
-  },
+  //   //2: (blanks, locked) => {
+  //     let t = blanks[3].word;
+  //     //console.log(t);
+  //     if (t == "attack") {
+  //       return 4;
+  //     } else if (t == "flea") {
+  //       return 5;
+  //     } else {
+  //       return 16;
+  //     }
+  //   },
 
-  // we don't talk about line 3
-  // the forgotten line,
-  // erased, forgotten nevermore
-  
-  4: (blanks, locked) => {
-    let t = blanks[3].word;
-    if (t == "destroy it") {
-      return 30;
-    } else {
-      return 6;
-    }
-  },
+  //   // we don't talk about line 3
+  //   // the forgotten line,
+  //   // erased, forgotten nevermore
+    
+  //   4: (blanks, locked) => {
+  //     let t = blanks[3].word;
+  //     if (t == "destroy it") {
+  //       return 30;
+  //     } else {
+  //       return 6;
+  //     }
+  //   },
 
-  5: (blanks, locked) => {
-    return narrative.stages.length;
-  },
+  //   5: (blanks, locked) => {
+  //     return narrative.stages.length;
+  //   },
 
-  6: (blanks, locked) => {
-    let t = blanks[1].word;
-    if (t == "calm") {
-      return 7;
-    }
-    return 12;
-  },
+  //   6: (blanks, locked) => {
+  //     let t = blanks[1].word;
+  //     if (t == "calm") {
+  //       return 7;
+  //     }
+  //     return 12;
+  //   },
 
-  7: (blanks, locked) => {
-    if(magicUserBaby()) {
-      return 8;
-    } else {
-      return 10;
-    }
-  },
+  //   7: (blanks, locked) => {
+  //     if(magicUserBaby()) {
+  //       return 8;
+  //     } else {
+  //       return 10;
+  //     }
+  //   },
 
-  // 8 will ALWAYS go to 9
-  
-  9: (blanks, locked) => {
-    return narrative.stages.length;
-  },
+  //   // 8 will ALWAYS go to 9
+    
+  //   9: (blanks, locked) => {
+  //     return narrative.stages.length;
+  //   },
 
-  // 10 can be reached from 7, it will always go to 11
-  
-  11: (blanks, locked) => {
-    return narrative.stages.length;
-  },
-  
-  12: (blanks, locked) => {
-    let t = blanks[2].word;
-    if (t == "greed, to keep" || t == "thirst, desire") {
-      return 13;
-    } else {
-      if(magicUserBaby()) {
-        return 14;
-      } else {
-        return 15;
-      }
-    }
-  },
+  //   // 10 can be reached from 7, it will always go to 11
+    
+  //   11: (blanks, locked) => {
+  //     return narrative.stages.length;
+  //   },
+    
+  //   12: (blanks, locked) => {
+  //     let t = blanks[2].word;
+  //     if (t == "greed, to keep" || t == "thirst, desire") {
+  //       return 13;
+  //     } else {
+  //       if(magicUserBaby()) {
+  //         return 14;
+  //       } else {
+  //         return 15;
+  //       }
+  //     }
+  //   },
 
-  13: (blanks, locked) => {
-    return narrative.stages.length
-  },
+  //   13: (blanks, locked) => {
+  //     return narrative.stages.length
+  //   },
 
-  14: (banks, locked) => {
-    return narrative.stages.length;
-  },
-  15: (blanks, locked) => {
-    return narrative.stages.length;
-  },
-  16: (blanks, locked) => {
-    return 17;
-  },
-  17: (blanks, locked) => {
-    let t = blanks[0].word;
-    if(t == "nothing" || t == "tiny marble"){
-      return 18;
-    } else {
-      return 30;
-    }
-  },
-  18: (blanks, locked) => {
-    let t = blanks[1].word;
-    if(t == " shouts ahead" || t == " reaches from ur side"){
-      return 21;
-    } else {
-      return 22;
-    }
-  },
-  19: (blanks, locked) => {
-    return narrative.stages.length;
-  },
-  20: (blanks, locked) => {
-    return narrative.stages.length;
-  },
-  21: (blanks, locked) => {
-    let t = blanks[1].word;
-    if(t == "warn the others"){
-      return 20;
-    } else if (t == "accept fate") {
-      return 22;
-    } else {
-        return 24;
-    }
-  },
-  22: (blanks,locked) => {
-    return 19;
-  },
-  23: (blanks, locked) => {
-    return 24;
-  },
-  24: (blanks, locked) => {
-    let t = lockedChoices.gift;
-    if (t == "+1 mending kit"){
-      return 26;
-    } else {
-      return 25;
-    };
-  },
-  25: (blanks, locked) => {
-    return narrative.stages.length;
-  },
-  26: (blanks, locked) => {
-    return 27;
-  },
+  //   14: (banks, locked) => {
+  //     return narrative.stages.length;
+  //   },
+  //   15: (blanks, locked) => {
+  //     return narrative.stages.length;
+  //   },
+  //   16: (blanks, locked) => {
+  //     return 17;
+  //   },
+  //   17: (blanks, locked) => {
+  //     let t = blanks[0].word;
+  //     if(t == "nothing" || t == "tiny marble"){
+  //       return 18;
+  //     } else {
+  //       return 30;
+  //     }
+  //   },
+  //   18: (blanks, locked) => {
+  //     let t = blanks[1].word;
+  //     if(t == " shouts ahead" || t == " reaches from ur side"){
+  //       return 21;
+  //     } else {
+  //       return 22;
+  //     }
+  //   },
+  //   19: (blanks, locked) => {
+  //     return narrative.stages.length;
+  //   },
+  //   20: (blanks, locked) => {
+  //     return narrative.stages.length;
+  //   },
+  //   21: (blanks, locked) => {
+  //     let t = blanks[1].word;
+  //     if(t == "warn the others"){
+  //       return 20;
+  //     } else if (t == "accept fate") {
+  //       return 22;
+  //     } else {
+  //         return 24;
+  //     }
+  //   },
+  //   22: (blanks,locked) => {
+  //     return 19;
+  //   },
+  //   23: (blanks, locked) => {
+  //     return 24;
+  //   },
+  //   24: (blanks, locked) => {
+  //     let t = lockedChoices.gift;
+  //     if (t == "+1 mending kit"){
+  //       return 26;
+  //     } else {
+  //       return 25;
+  //     };
+  //   },
+  //   25: (blanks, locked) => {
+  //     return narrative.stages.length;
+  //   },
+  //   26: (blanks, locked) => {
+  //     return 27;
+  //   },
 
-  27: (blanks, locked) => {
-    if (magicUserBaby()){
-      return 28;
-    } else {
-      return 29;
-    }
-  },
-  28: (blanks, locked) => {
-    return narrative.stages.length;
-  },
-  29: (blanks, locked) => {
-    return narrative.stages.length;
-  },
-  30: (blanks, locked) => {
-    let t = lockedChoices.gift
-    console.log(t);
-    if(magicUserBaby() && t == "+1 mending kit") {
-      return 38;
-    } else if(magicUserBaby()) {
-      return 32;
-    } else {
-      return 31;
-    }
-  },
-  31: (blanks, locked) => {
-    let t = blanks[1].word;
-    if(t == "rest"){
-      return 33;
-    } else {
-      return 23;
-    }
-  },
-  32: (blanks, locked) => {
-    return narrative.stages.length;
-  },
-  
-  33: (blanks, locked) => {
-    return 34;
-  },
-  34: (blanks, locked) => {
-    let t = lockedChoices.gift;
-    let r = random(1);
-    //console.log(r);
-    if(t == "ball of fire"){
-      return 35;
-    } else if(r > 0.5){
-      return 36;
-    } else {
-      return 37;
-    }
-  },
-  35: (blanks, locked) => {
-    return narrative.stages.length;
-  },
-  36: (blanks, locked) => {
-    return narrative.stages.length;
-  },
-  37: (blanks, locked) => {
-    return narrative.stages.length;
-  },
-  38: (blanks, locked) => {
-    return 28;
-  }
-};
+  //   27: (blanks, locked) => {
+  //     if (magicUserBaby()){
+  //       return 28;
+  //     } else {
+  //       return 29;
+  //     }
+  //   },
+  //   28: (blanks, locked) => {
+  //     return narrative.stages.length;
+  //   },
+  //   29: (blanks, locked) => {
+  //     return narrative.stages.length;
+  //   },
+  //   30: (blanks, locked) => {
+  //     let t = lockedChoices.gift
+  //     console.log(t);
+  //     if(magicUserBaby() && t == "+1 mending kit") {
+  //       return 38;
+  //     } else if(magicUserBaby()) {
+  //       return 32;
+  //     } else {
+  //       return 31;
+  //     }
+  //   },
+  //   31: (blanks, locked) => {
+  //     let t = blanks[1].word;
+  //     if(t == "rest"){
+  //       return 33;
+  //     } else {
+  //       return 23;
+  //     }
+  //   },
+  //   32: (blanks, locked) => {
+  //     return narrative.stages.length;
+  //   },
+    
+  //   33: (blanks, locked) => {
+  //     return 34;
+  //   },
+  //   34: (blanks, locked) => {
+  //     let t = lockedChoices.gift;
+  //     let r = random(1);
+  //     //console.log(r);
+  //     if(t == "ball of fire"){
+  //       return 35;
+  //     } else if(r > 0.5){
+  //       return 36;
+  //     } else {
+  //       return 37;
+  //     }
+  //   },
+  //   35: (blanks, locked) => {
+  //     return narrative.stages.length;
+  //   },
+  //   36: (blanks, locked) => {
+  //     return narrative.stages.length;
+  //   },
+  //   37: (blanks, locked) => {
+  //     return narrative.stages.length;
+  //   },
+  //   38: (blanks, locked) => {
+  //     return 28;
+  //   }
+  // };
 
-function gameStateManager(index, history, blanks) {
-  const rule = STAGE_TRANSITIONS[index];
-  if (rule) {
-    return rule(blanks, lockedChoices);
-  } else {
-    return index + 1;
-  }
-}
+  // function gameStateManager(index, history, blanks) {
+  //   const rule = STAGE_TRANSITIONS[index];
+  //   if (rule) {
+  //     return rule(blanks, lockedChoices);
+  //   } else {
+  //     return index + 1;
+  //   }
+  // }
 
-function refresh() {
-  // stageIndex = 0;
-  // currentBlanks = [];
-  // previousBlanks = [];
-  // currentText = "";
-  // currentSessionHistory = [];
-  // document.getElementById("next").innerHTML = "proceed";
-  // lockedChoices = {};
-  // stageIndex = 0;
-  // document.getElementById("g").classList.add("unselect");
-  // document.getElementById("m").style.paddingTop = "0px";
-  //console.log("refreshed");
-  location.reload();
-}
+  // function refresh() {
+  //   // stageIndex = 0;
+  //   // currentBlanks = [];
+  //   // previousBlanks = [];
+  //   // currentText = "";
+  //   // currentSessionHistory = [];
+  //   // document.getElementById("next").innerHTML = "proceed";
+  //   // lockedChoices = {};
+  //   // stageIndex = 0;
+  //   // document.getElementById("g").classList.add("unselect");
+  //   // document.getElementById("m").style.paddingTop = "0px";
+  //   //console.log("refreshed");
+  //   location.reload();
+  // }
 
-function finalPoem(session) {
-  let s = "";
-  session.forEach((stage, index) => {
-    s += stage;
-    if (index !== session.length - 1) {
-      s += "<br /><br />";
-    }
-  });
-  return s;
-}
+  // function finalPoem(session) {
+  //   let s = "";
+  //   session.forEach((stage, index) => {
+  //     s += stage;
+  //     if (index !== session.length - 1) {
+  //       s += "<br /><br />";
+  //     }
+  //   });
+  //   return s;
+  // }
 
-function magicUserBaby() {
-  let w = lockedChoices.weapon;
+  // function magicUserBaby() {
+  //   let w = lockedChoices.weapon;
 
-  if(w == "sword" || w == "bow & arrow" || w == "flail" || w == "shield" || w == "glock") {
-    return false;
-  } else {
-    return true;
-  }
-}
+  //   if(w == "sword" || w == "bow & arrow" || w == "flail" || w == "shield" || w == "glock") {
+  //     return false;
+  //   } else {
+  //     return true;
+  //   }
+  // }
