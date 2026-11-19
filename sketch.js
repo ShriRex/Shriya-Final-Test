@@ -9,8 +9,8 @@ let currentText = "";
 let currentSessionHistory = [];
 
 // sticky categories: once they are chosen, they remain the same for the rest of the run----
-const STICKY_CATEGORIES = ["weapon", "jewel", "deity", "gift", "groups2", "action7"];
-let lockedChoices = {};
+//const STICKY_CATEGORIES = ["weapon", "jewel", "deity", "gift", "groups2", "action7"];
+//let lockedChoices = {};
 
 // each category and the corresponding color they will be shown in
 const CATEGORY_COLORS = {
@@ -44,7 +44,7 @@ function categoryColor(cat) {
   }
 }
 
-const LOCKED_COLOR = "#a7a7ad";
+//const LOCKED_COLOR = "#a7a7ad";
 
 // ---- p5 v2: async setup, awaits the JSON before anything renders ----
 async function setup() {
